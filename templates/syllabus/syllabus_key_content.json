@@ -1,0 +1,42 @@
+{
+  "teachingContentAndSchedule": [
+    {
+      "unitNumber": "<此处填写课程大章节序号>",
+      "content": "<此处填写课程大章节内容>",
+      "unit_knowledge_point": "<此处填写本大章节中所有可能用到的知识点>",
+      "subsections": [
+        {
+          "subUnitNumber": "<此处填写课程小章节序号>",
+          "content": "<此处填写课程小章节内容>",
+          "knowledge_point": "<此处填写本小节涵盖的知识点>",
+          "time_allocation": "<此处填写学时分配>"
+        },
+        {
+          "subUnitNumber": "<此处填写课程小章节序号>",
+          "content": "<此处填写课程小章节内容>",
+          "knowledge_point": "<此处填写本小节涵盖的知识点>",
+          "time_allocation": "<此处填写学时分配>"
+        }
+      ]
+    },
+    {
+      "unitNumber": "<此处填写课程大章节序号>",
+      "content": "<此处填写课程大章节内容>",
+      "unit_knowledge_point": "<此处填写本大章节中所有可能用到的知识点>",
+      "subsections": [
+        {
+          "subUnitNumber": "<此处填写课程小章节序号>",
+          "content": "<此处填写课程小章节内容>",
+          "knowledge_point": "<此处填写本小节涵盖的知识点>",
+          "time_allocation": "<此处填写学时分配>"
+        },
+        {
+          "subUnitNumber": "<此处填写课程小章节序号>",
+          "content": "<此处填写课程小章节内容>",
+          "knowledge_point": "<此处填写本小节涵盖的知识点>",
+          "time_allocation": "<此处填写学时分配>"
+        }
+      ]
+    }
+  ]
+}

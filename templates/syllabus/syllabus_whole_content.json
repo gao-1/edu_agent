@@ -1,0 +1,120 @@
+{
+  "courseCode": "<此处填写课程编号>",
+  "courseNameChinese": "<此处填写课程中文名称>",
+  "courseNameEnglish": "<此处填写课程英文名称>",
+  "teachingLanguage": "<此处填写授课语言>",
+  "department": "<此处填写开课学院>",
+  "courseCategory": "<此处填写课程类型>",
+  "courseDirector": "<此处填写任课教师>",
+  "credits": "<此处填写总学分>",
+  "hours": "<此处填写总学时>",
+  "isTechnicalCourse": "<此处填写是或否>",
+  "assessmentType": "<此处填写评分标准>",
+  "gradingSystem": "<此处填写记分制度>",
+  "courseIntroduction": "<此处填写课程介绍>",
+  "courseObjectives": "<此处填写课程目标>",
+  "courseObjectivesDetails": [
+    {
+      "objectiveNumber": "<此处填写课程目标序号>",
+      "description": "<此处填写该课程目标的说明>",
+      "supportingGraduationRequirements": "<此处填写支撑毕业要求>"
+    },
+    {
+      "objectiveNumber": "<此处填写课程目标序号>",
+      "description": "<此处填写该课程目标的说明>",
+      "supportingGraduationRequirements": "<此处填写支撑毕业要求>"
+    },
+    {
+      "objectiveNumber": "<此处填写课程目标序号>",
+      "description": "<此处填写该课程目标的说明>",
+      "supportingGraduationRequirements": "<此处填写支撑毕业要求>"
+    },
+    {
+      "objectiveNumber": "<此处填写课程目标序号>",
+      "description": "<此处填写该课程目标的说明>",
+      "supportingGraduationRequirements": "<此处填写支撑毕业要求>"
+    }
+  ],
+  "assessmentMethodsAndWeighting": {
+    "classPerformance": "<此处填写考核方式成绩占比>",
+    "homework": "<此处填写考核方式成绩占比>",
+    "midtermExam": "<此处填写考核方式成绩占比>",
+    "labWork": "<此处填写考核方式成绩占比>",
+    "closedBookExam": "<此处填写考核方式成绩占比>",
+    "openBookExam": "<此处填写考核方式成绩占比>",
+    "pptPresentation": "<此处填写考核方式成绩占比>",
+    "total": "<此处填写考核方式成绩占比总和>"
+  },
+  "teachingContentAndSchedule": [
+    {
+      "unitNumber": "<此处填写课程大章节序号>",
+      "content": "<此处填写课程大章节内容>",
+      "unit_knowledge_point": "<此处填写本大章节中所有可能用到的知识点>",
+      "subsections": [
+        {
+          "subUnitNumber": "<此处填写课程小章节序号>",
+          "content": "<此处填写课程小章节内容>",
+          "knowledge_point": "<此处填写本小节涵盖的知识点>",
+          "time_allocation": "<此处填写学时分配>"
+        },
+        {
+          "subUnitNumber": "<此处填写课程小章节序号>",
+          "content": "<此处填写课程小章节内容>",
+          "knowledge_point": "<此处填写本小节涵盖的知识点>",
+          "time_allocation": "<此处填写学时分配>"
+        }
+      ]
+    },
+    {
+      "unitNumber": "<此处填写课程大章节序号>",
+      "content": "<此处填写课程大章节内容>",
+      "unit_knowledge_point": "<此处填写本大章节中所有可能用到的知识点>",
+      "subsections": [
+        {
+          "subUnitNumber": "<此处填写课程小章节序号>",
+          "content": "<此处填写课程小章节内容>",
+          "knowledge_point": "<此处填写本小节涵盖的知识点>",
+          "time_allocation": "<此处填写学时分配>"
+        },
+        {
+          "subUnitNumber": "<此处填写课程小章节序号>",
+          "content": "<此处填写课程小章节内容>",
+          "knowledge_point": "<此处填写本小节涵盖的知识点>",
+          "time_allocation": "<此处填写学时分配>"
+        }
+      ]
+    }
+  ],
+  "labProjects": [
+    {
+      "sequenceNumber": "<此处填写实验项目序号>",
+      "projectName": "<此处填写实验项目名称>",
+      "contentAndRequirements": "<此处填写实验内容与要求>",
+      "hours": "<此处填写实验时长>",
+      "type": "<此处填写实验类型>"
+    },
+    {
+      "sequenceNumber": "<此处填写实验项目序号>",
+      "projectName": "<此处填写实验项目名称>",
+      "contentAndRequirements": "<此处填写实验内容与要求>",
+      "hours": "<此处填写实验时长>",
+      "type": "<此处填写实验类型>"
+    }
+  ],
+  "textbooksAndReferences": [
+    {
+      "title": "<此处填写教材与参考书目的名称>",
+      "editor": "<此处填写该参考资料的作者>",
+      "ISBN": "<此处填写该参考资料的ISBN书号>",
+      "publisher": "<此处填写出版社>",
+      "publicationYear": "<此处填写出版年度>"
+    },
+    {
+      "title": "<此处填写教材与参考书目的名称>",
+      "editor": "<此处填写该参考资料的作者>",
+      "ISBN": "<此处填写该参考资料的ISBN书号>",
+      "publisher": "<此处填写出版社>",
+      "publicationYear": "<此处填写出版年度>"
+    }
+  ]
+}
