@@ -3,8 +3,10 @@ name = "edu-agent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11.9"
 dependencies = [
     "openai",
     "PyPDF2",
+    "chromadb",
+    "python-dotenv"
 ]

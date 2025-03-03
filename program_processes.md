@@ -85,7 +85,7 @@
 
 ##### 需要使用的部分:
 - 定版课程大纲 `final_syllabus.json`
-- 对应章节的知识点 `knowledge_point.txt`
+- 对应章节的知识点 `knowledge_point.json`
 - 讲义制作需要求 `request_for_teaching_material.txt`
 
 ##### 大模型输出:
