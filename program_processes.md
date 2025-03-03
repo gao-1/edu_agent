@@ -89,7 +89,7 @@
 - 讲义制作需要求 `request_for_teaching_material.txt`
 
 ##### 大模型输出:
-- 对应章节的讲义 `teaching_material.txt`
+- 对应章节的讲义 `teaching_material.md`
 
 
 
