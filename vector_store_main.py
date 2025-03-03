@@ -43,7 +43,7 @@ def main():
             continue
 
         print(f"[VectorStore] 正在读取Markdown文件: {md_file}")
-        text = _read_md(md_file)
+        text = text_processor.read_markdown(md_file)
         print(f"[VectorStore] 已完成读取Markdown文件: {md_file}，共读取 {len(text)} 个字符")
 
         if not text.strip():
