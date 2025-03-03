@@ -4,4 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "flask",
+    "openai",
+    "python-dotenv",
+    "pandas",
+    "PyPDF2",
+    "chromadb",
+    "typing",
+    "whisper",
+    "Markdown"
+]
