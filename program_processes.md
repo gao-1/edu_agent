@@ -56,7 +56,7 @@
 - 无
 
 ##### 需要使用的部分:
-- 初版课程大纲 `initial_syllabus.txt`
+- 初版课程大纲 `initial_syllabus.json`
 
 ##### 大模型生成:
 - 定版课程大纲 `final_syllabus.json`
