@@ -1,8 +1,6 @@
 附：graphviz基础语法：
 
----
-
-## **有向图（Directed Graph）**
+有向图（Directed Graph）
 ```python
 from graphviz import Digraph
 
@@ -15,9 +13,7 @@ dot.edge('C', 'A')
 dot.render('directed_graph', format='png', view=True)
 ```
 
----
-
-## **无向图（Undirected Graph）**
+无向图（Undirected Graph）
 ```python
 from graphviz import Graph
 
@@ -30,9 +26,7 @@ g.edge('C', 'A')
 g.render('undirected_graph', format='png', view=True)
 ```
 
----
-
-## **树结构**
+树结构
 ```python
 dot = Digraph()
 
@@ -50,9 +44,7 @@ dot.edge('B', 'E')
 dot.render('tree_graph', format='png', view=True)
 ```
 
----
-
-## **状态机**
+状态机
 ```python
 dot = Digraph()
 
@@ -69,9 +61,7 @@ dot.edge('B', 'S', label='Retry')
 dot.render('state_machine', format='png', view=True)
 ```
 
----
-
-## **组织结构图**
+组织结构图
 ```python
 dot = Digraph()
 
@@ -91,9 +81,7 @@ dot.edge('CFO', 'Accountant')
 dot.render('organization_chart', format='png', view=True)
 ```
 
----
-
-## **UML 类图**
+UML 类图
 ```python
 dot = Digraph()
 
@@ -107,9 +95,7 @@ dot.edge('Person', 'Teacher', arrowhead='empty')
 dot.render('uml_class_diagram', format='png', view=True)
 ```
 
----
-
-## **网络拓扑图**
+网络拓扑图
 ```python
 g = Graph()
 
@@ -131,9 +117,7 @@ g.edge('Switch2', 'PC4')
 g.render('network_topology', format='png', view=True)
 ```
 
----
-
-## **流程图**
+流程图
 ```python
 dot = Digraph()
 
@@ -154,10 +138,8 @@ dot.edge('E', 'F')
 dot.render('flowchart', format='png', view=True)
 ```
 
----
-
-### **总结**
-| **类别** | **Python 代码文件名** |
+总结
+| 类别 | Python 代码文件名 |
 |---------|-----------------|
 | 有向图 | `directed_graph.png` |
 | 无向图 | `undirected_graph.png` |
@@ -169,10 +151,9 @@ dot.render('flowchart', format='png', view=True)
 | 流程图 | `flowchart.png` |
 
 附：matplotlib使用方法
----
 
-## **绘制基本函数**
-### **线性函数**
+绘制基本函数
+线性函数
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -189,9 +170,7 @@ plt.title("线性函数")
 plt.show()
 ```
 
----
-
-### **二次函数**
+二次函数
 ```python
 y = x**2 - 4*x + 2  # 二次函数 y = x^2 - 4x + 2
 
@@ -204,9 +183,7 @@ plt.title("二次函数")
 plt.show()
 ```
 
----
-
-### **三角函数**
+三角函数
 ```python
 y1 = np.sin(x)
 y2 = np.cos(x)
@@ -222,10 +199,8 @@ plt.title("三角函数")
 plt.show()
 ```
 
----
-
-## **其他函数**
-### **指数 & 对数函数**
+其他函数
+指数 & 对数函数
 ```python
 y_exp = np.exp(x / 5)  # 指数函数 e^(x/5)
 y_log = np.log(x[x > 0])  # 取 x > 0 避免 log 负值问题
@@ -241,10 +216,8 @@ plt.title("指数 & 对数函数")
 plt.show()
 ```
 
----
-
-### ** 隐函数**
-**方程：** \( x^2 + y^2 = 9 \) （圆的方程）  
+隐函数
+方程： \( x^2 + y^2 = 9 \) （圆的方程）  
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -264,11 +237,9 @@ plt.title("隐函数（圆）")
 plt.show()
 ```
 
----
-
-## **极坐标函数**
-### **玫瑰曲线**
-**方程：** \( r = \cos(4\theta) \)  
+极坐标函数
+玫瑰曲线
+方程： \( r = \cos(4\theta) \)  
 ```python
 theta = np.linspace(0, 2*np.pi, 1000)
 r = np.cos(4 * theta)
@@ -278,10 +249,8 @@ plt.title("极坐标函数：玫瑰曲线")
 plt.show()
 ```
 
----
-
-### **阿基米德螺旋**
-**方程：** \( r = \theta \)  
+阿基米德螺旋
+方程： \( r = \theta \)  
 ```python
 r = theta
 
@@ -290,10 +259,8 @@ plt.title("极坐标函数：阿基米德螺旋")
 plt.show()
 ```
 
----
-
-## **参数方程**
-### ** 圆**
+参数方程
+圆
 ```python
 t = np.linspace(0, 2*np.pi, 400)
 x = 3 * np.cos(t)
@@ -307,9 +274,7 @@ plt.title("参数方程（圆）")
 plt.show()
 ```
 
----
-
-### ** 心形线**
+心形线
 ```python
 x = 16 * np.sin(t)**3
 y = 13 * np.cos(t) - 5 * np.cos(2*t) - 2 * np.cos(3*t) - np.cos(4*t)
@@ -320,10 +285,8 @@ plt.title("心形曲线")
 plt.show()
 ```
 
----
-
-## **3D 曲面图**
-### **三维曲面**
+3D 曲面图
+三维曲面
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 
@@ -340,9 +303,7 @@ plt.title("3D 曲面图")
 plt.show()
 ```
 
----
-
-## **等高线图**
+等高线图
 ```python
 X = np.linspace(-5, 5, 100)
 Y = np.linspace(-5, 5, 100)
@@ -355,9 +316,7 @@ plt.title("等高线图")
 plt.show()
 ```
 
----
-
-## **总结**
+总结
 | **函数类型** | **示例代码** |
 |------------|------------|
 | **线性函数** | `y = 2x + 3` |
@@ -369,3 +328,193 @@ plt.show()
 | **参数方程** | `心形曲线, 圆` |
 | **3D 曲面图** | `sin(sqrt(x^2 + y^2))` |
 | **等高线图** | `等高线绘制` |
+
+Mermaid使用方法：
+
+1. 流程图 (Flowchart)
+1.1. 基本结构
+```mermaid
+graph TD
+    A[起点] --> B{判断条件}
+    B -- Yes --> C[执行步骤1]
+    B -- No --> D[执行步骤2]
+    C --> E[结束]
+    D --> E
+```
+- `graph TD`：TD 表示从上到下（Top-Down）。
+- `A --> B`：表示 A 指向 B，使用 `-->` 画箭头。
+- `{}` 表示条件判断框，`[]` 表示方形框，`()` 表示圆角矩形。
+
+1.2. 方向控制
+| 语法 | 方向 |
+|------|------|
+| `graph TD` | 自上而下 (Top to Down) |
+| `graph LR` | 自左到右 (Left to Right) |
+| `graph RL` | 自右到左 (Right to Left) |
+| `graph BT` | 自下而上 (Bottom to Top) |
+
+1.3. 复杂结构
+```mermaid
+graph TD
+    A -->|路径1| B
+    A -->|路径2| C
+    B & C --> D[合并节点]
+    D -->|最终结果| E((终点))
+```
+- `|路径1|`：表示带有标签的路径。
+
+2.时序图 (Sequence Diagram)
+时序图用于表示交互过程，例如网络通信、函数调用等。
+
+2.1. 基本结构
+```mermaid
+sequenceDiagram
+    participant A as 客户端
+    participant B as 服务器
+    A->>B: 发送请求
+    B->>A: 返回响应
+```
+- `participant` 定义参与者，`->>` 表示带箭头的消息。
+
+2.2. 交互过程
+```mermaid
+sequenceDiagram
+    Alice->>Bob: 你好 Bob, 最近怎么样？
+    Bob-->>Alice: 我很好，谢谢！
+    Alice-xBob: 结束聊天
+    Note right of Bob: 这里是注释
+```
+- `-->>` 表示返回消息。
+- `x` 结尾表示消息结束。
+
+3. 甘特图 (Gantt Chart)
+甘特图用于展示任务进度。
+
+3.1. 基本结构
+```mermaid
+gantt
+    title 项目进度
+    dateFormat YYYY-MM-DD
+    section 计划
+    任务1 :done, t1, 2025-02-01, 2025-02-10
+    任务2 :active, t2, 2025-02-05, 2025-02-20
+    任务3 : t3, 2025-02-15, 2025-03-01
+```
+- `done` 表示完成，`active` 表示正在进行。
+
+ 4. 状态图 (State Diagram)
+用于表示状态转换，例如有限状态机。
+
+4.1. 基本结构
+```mermaid
+stateDiagram
+    [*] --> 开始
+    开始 --> 运行中
+    运行中 --> 结束
+    结束 --> [*]
+```
+- `[ * ]` 代表初始和终止状态。
+
+5. 类图 (Class Diagram)
+用于表示面向对象的类结构。
+
+5.1. 基本结构
+```mermaid
+classDiagram
+    class 动物 {
+        +string 名字
+        +void 叫()
+    }
+    class 狗 {
+        +void 吠叫()
+    }
+    动物 <|-- 狗
+```
+- `<|--` 代表继承关系。
+
+6. ER 图 (Entity Relationship Diagram)
+用于表示数据库实体关系。
+
+```mermaid
+erDiagram
+    USER ||--o{ ORDER : 下单
+    ORDER ||--|{ ITEM : 包含
+```
+- `||--o{` 表示一对多关系。
+
+7. 饼图 (Pie Chart)
+```mermaid
+pie
+    title 浏览器市场份额
+    "Chrome" : 65
+    "Firefox" : 20
+    "Safari" : 10
+    "Edge" : 5
+```
+
+latex基本语法：
+
+1. 行内公式
+使用 $...$ 表示：
+```markdown
+这是一个行内公式：$E = mc^2$，它会在文本中显示。
+```
+
+2. 块级公式
+使用 $$...$$表示：
+```markdown
+$$
+E = mc^2
+$$
+```
+
+3. 常见数学符号
+| 符号 | 语法 | 示例 |
+|------|------|------|
+| 加减乘除 | `+ - \times \div` | $a + b$, $a - b$, $a \times b$, $a \div b$ |
+| 分数 | `\frac{a}{b}` | $\frac{a}{b}$ |
+| 上下标 | `x^2, x_i` | $x^2, x_i$ |
+| 根号 | `\sqrt{x}` | $\sqrt{x}$ |
+| 求和 | `\sum_{i=1}^{n} i` | $\sum_{i=1}^{n} i$ |
+| 积分 | `\int_{a}^{b} x dx` | $\int_{a}^{b} x dx$ |
+| 矩阵 | `\begin{bmatrix} a & b \\ c & d \end{bmatrix}` | $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ |
+
+4. 复杂公式示例
+4.1. 二次方程求根公式
+```markdown
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+```
+
+4.2. 极限
+```markdown
+$$
+\lim_{x \to \infty} \frac{1}{x} = 0
+$$
+```
+
+4.3. 矩阵
+```markdown
+$$
+A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}
+$$
+```
+
+5. 公式编号
+部分 Markdown 渲染器（如 KaTeX）支持 `\tag{}` 来编号：
+```markdown
+$$
+E = mc^2 \tag{1}
+$$
+```
+
+6. 逻辑符号
+| 符号 | 语法 | 示例 |
+|------|------|------|
+| 命题否定 | `\neg P` | $\neg P$ |
+| 逻辑与 | `P \wedge Q` | $P \wedge Q$ |
+| 逻辑或 | `P \vee Q` | $P \vee Q$ |
+| 蕴含 | `P \Rightarrow Q` | $P \Rightarrow Q$ |
+| 等价 | `P \Leftrightarrow Q` | $P \Leftrightarrow Q$ |
+
