@@ -74,7 +74,7 @@
 - 定版课程大纲 `final_syllabus.json`
 
 ##### 大模型输出:
-- 对应章节的知识点 `knowledge_point.txt`
+- 对应章节的知识点 `knowledge_point.json`
 
 ###### 注:这里需要先从课程大纲中提取章节的大标题，用于指导知识点生成
 
