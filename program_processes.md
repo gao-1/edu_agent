@@ -27,9 +27,8 @@
 - 教学内容及目标的制作要求 `request_for_content_and_target.txt`
 
 #### 大模型输出:
-- 教学内容 `teaching_content.txt`
-- 教学目标 `teaching_content_target.txt`
-- 
+- 教学内容 `teaching_content_and_target.txt`
+
 ###### 注:教学内容与教学目标成对生成，即一个教学内容对应有一个教学目标
 
 ### 2.生成教学大纲
@@ -47,7 +46,7 @@
 - 教学大纲制作要求 `request_for_syllabus.txt`
 
 ##### 大模型输出:
-- 初版课程大纲 `initial_syllabus.txt`
+- 初版课程大纲 `initial_syllabus.json`
 
 ###### 注:这里只生成一个初步大纲，用户可以根据自己的需求继续进行更改
 
@@ -57,7 +56,7 @@
 - 无
 
 ##### 需要使用的部分:
-- 初版课程大纲 `initial_syllabus.txt`
+- 初版课程大纲 `initial_syllabus.json`
 
 ##### 大模型生成:
 - 定版课程大纲 `final_syllabus.json`
@@ -75,7 +74,7 @@
 - 定版课程大纲 `final_syllabus.json`
 
 ##### 大模型输出:
-- 对应章节的知识点 `knowledge_point.txt`
+- 对应章节的知识点 `knowledge_point.json`
 
 ###### 注:这里需要先从课程大纲中提取章节的大标题，用于指导知识点生成
 
@@ -90,7 +89,7 @@
 - 讲义制作需要求 `request_for_teaching_material.txt`
 
 ##### 大模型输出:
-- 对应章节的讲义 `teaching_material.txt`
+- 对应章节的讲义 `teaching_material.md`
 
 
 
